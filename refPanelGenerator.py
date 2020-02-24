@@ -64,7 +64,7 @@ class Imputation:
         self.chromosome = chromosome
         self.genericRef = panelBase+'.hap.gz'
         self.vcfAll = panelBase+'.vcf.gz'
-
+        ## Setting names
         self.fold = fold
         panel0 = '%s_%02d_%03d' % (panelBase, fold, len(X)) ##  note fold and size of training set into filename
         self.panel = f'{panel0}.hap.gz'
